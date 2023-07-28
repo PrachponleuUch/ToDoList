@@ -13,9 +13,7 @@ import { ToDoList } from "./ToDoList";
 export default function App(){
   //? State is used to make it more interactive
   const [ todos, setTodos ] = useState(() => {
-    const localValue = localStorage.getItem('ITEMS')
-    if (localValue === null) return []
-    return JSON.parse(localValue)
+    return JSON.parse(localStorage.getItem('ITEM')) || []
   });
 
   //? UseEffect executes its function every time its 2nd property changes

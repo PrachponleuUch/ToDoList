@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
 
+//? Render REACT app to HTML template through the element with the class 'root'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
